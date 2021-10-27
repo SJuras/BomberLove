@@ -316,15 +316,61 @@ section {
   justify-content: center;
   align-items: center;
 
-  height: 300px;
-  background-color: red;
+  background-color: #686a61;
+}
+
+.container-2 {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #686a61;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .section-half {
   width: 50%;
   height: 90%;
-  background-color: aqua;
   padding: 24px;
+}
+
+.section-half h2 {
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.place-title::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 80%;
+  background-color: #d33132;
+}
+
+.section-half ul li {
+  display: inline-block;
+  margin: 16px;
+}
+
+.section-half ul li a i {
+  font-size: 1.8em;
+  color: #f3f3f3;
+  transition: 0.5s;
+}
+
+.section-half ul li:hover a i {
+  transform: translateY(-6px);
+  color: #d33132;
 }
 
 .gallery-container {
@@ -340,7 +386,6 @@ section {
   width: 400px;
   height: 400px;
   margin: 24px;
-  background-color: red;
   transition: 0.5s;
 }
 
@@ -355,8 +400,44 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 24px;
 }
 
+
+.store-img {
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+  background-color: red;
+}
+
+.video-box {
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: red;
+}
+
+.contact-form {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.contact-form input[type='text'],
+.contact-form input[type='email'],
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form input[type='submit'] {
+  cursor: pointer;
+}
 /* pages END */
 
 /* footer */
@@ -408,7 +489,12 @@ footer {
     flex-direction: column;
   }
 
+  .container-2 {
+    flex-direction: column-reverse;
+  }
+
   .section-half {
     width: 100%;
+    text-align: center;
   }
 }
