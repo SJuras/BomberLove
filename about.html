@@ -10,6 +10,7 @@
   <script src="js/main.js" defer></script>
   <script src="js/smoothscrollpolyfills.min.js"></script>
   <link href="icons/css/all.css" rel="stylesheet">
+  <link href="css/lightbox.css" rel="stylesheet" />
   <title>About Us | About Bomber Love rock band</title>
   <link rel="shortcut icon" type="image/jpg" href="img/favicon.png"/>
   <link rel="stylesheet" href="css/style.css">
@@ -59,8 +60,14 @@
   <div class="container">
     <div class="section-half">
       <h2>Where it all Started</h2>
+      <p>
+        Rooted in Vancouver's punk scene from the early 1980s, Bomber Love brings
+        Rock, Blues & Psychedelic
+      </p>
     </div>
-    <div class="section-half"></div>
+    <div class="section-half">
+
+    </div>
   </div>
 </section>
 
@@ -78,13 +85,27 @@
 <!-- gallery -->
 <section>
   <div class="gallery-container">
-    <div class="pic-box"></div>
-    <div class="pic-box"></div>
-    <div class="pic-box"></div>
-    <div class="pic-box"></div>
-    <div class="pic-box"></div>
-    <div class="pic-box"></div>
-    <div class="pic-box"></div>
+    <div class="pic-box">
+      <a href="gallery/pic1.png" data-lightbox="gallery" data-title="Bomber Love"><img src="gallery/pic1-small.png"></a>
+    </div>
+    <div class="pic-box">
+      <a href="gallery/pic2.png" data-lightbox="gallery" data-title="Bomber Love"><img src="gallery/pic2-small.png"></a>
+    </div>
+    <div class="pic-box">
+      <a href="gallery/pic3.png" data-lightbox="gallery" data-title="Bomber Love"><img src="gallery/pic3-small.png"></a>
+    </div>
+    <div class="pic-box">
+      <a href="gallery/pic4.png" data-lightbox="gallery" data-title="Bomber Love"><img src="gallery/pic4-small.png"></a>
+    </div>
+    <div class="pic-box">
+      <a href="gallery/pic5.png" data-lightbox="gallery" data-title="Bomber Love"><img src="gallery/pic5-small.png"></a>
+    </div>
+    <div class="pic-box">
+      <a href="gallery/pic6.png" data-lightbox="gallery" data-title="Bomber Love"><img src="gallery/pic6-small.png"></a>
+    </div>
+    <div class="pic-box">
+      <a href="gallery/pic7.png" data-lightbox="gallery" data-title="Bomber Love"><img src="gallery/pic7-small.png"></a>
+    </div>
     <div class="pic-box"></div>
   </div>
 </section>
@@ -158,5 +179,12 @@
 </div>
 <!-- sidemenu END -->
 
+
+  <script src="js/lightbox-plus-jquery.js"></script>
+  <script>
+    lightbox.option({
+      'alwaysShowNavOnTouchDevices': true
+    })
+  </script>
 </body>
 </html>
