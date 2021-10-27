@@ -41,6 +41,10 @@ a {
   text-decoration: none;
 }
 
+.mb-24 {
+  margin-bottom: 24px;
+}
+
 /* buttons */
 .btn {
   padding: 10px 20px;
@@ -337,6 +341,12 @@ section {
   height: 400px;
   margin: 24px;
   background-color: red;
+  transition: 0.5s;
+}
+
+.pic-box:hover {
+  transform: scale(1.1);
+  box-shadow: 6px 20px 15px rgba(0,0,0,0.5);
 }
 
 .long-box {
