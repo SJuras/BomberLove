@@ -338,6 +338,15 @@ section {
   margin: 24px;
   background-color: red;
 }
+
+.long-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 /* pages END */
 
 /* footer */
