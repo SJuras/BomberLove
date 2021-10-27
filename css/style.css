@@ -14,6 +14,8 @@ white: #f3f3f3;
 
 red: #d33132;
 
+highlight red: #fe4647;
+
 lightest: #c5c6c1;
 midtone: #686a61;
 darkest: #36372f;
@@ -56,7 +58,14 @@ a {
   background-color: #d33132;
   border-radius: 20px;
   font-size: 2em;
+  box-shadow: 5px 10px 20px rgba(255,255,255,0.5);
   transition: 0.5s;
+}
+
+.btn:hover,
+.btn-spotify:hover {
+  background-color: #fe4647;
+  border: 2px solid #fe4647;
 }
 /* buttons END */
 
@@ -114,10 +123,9 @@ a {
   border-radius: 50%;
   padding: 10px;
   opacity: 0;
-  background-color: #0b0c0e;
-  color: #79ffca;
-  border-color: #79ffca;
-  box-shadow: 0 5px 20px rgba(121, 255, 202, 0.3);
+  background-color: #d33132;
+  color: #f3f3f3;
+  border-color: #d33132;
   transition: 0.5s;
   cursor: pointer;
   z-index: 99;
@@ -144,10 +152,12 @@ a {
   left: 0;
   z-index: 1000;
   padding: 12px 0px;
+  transition: 0.5s;
 }
 
-.header-bg {
+.header.sticky {
   background-color: #c5c6c1;
+  padding: 6px 0px;
 }
 
 .header-container {
@@ -271,12 +281,28 @@ a {
   align-items: center;
   flex-direction: column;
 
-  background-color: red;
+  background:linear-gradient(0deg, rgba(255,255,255, 0.4), rgba(255,255,255, 0.4)), url("../img/background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.page-intro-title h1 {
+  font-family: 'FuturaHeavy', sans-serif;
+  color: #36372f;
+  font-size: 5em;
+  text-transform: uppercase;
+  letter-spacing: -4px;
+}
+
+.page-intro-title h1 span {
+  color: #d33132;
+  font-size: 1em;
 }
 
 section {
   width: 100%;
   padding: 60px 0px;
+  background-color: #c5c6c1;
 }
 
 .container {

@@ -1,3 +1,10 @@
+// adds class sticky to header when scrolling down.
+window.addEventListener('scroll', function(){
+  var header = document.querySelector(".header");
+  header.classList.toggle('sticky', window.scrollY > 0);
+});
+// sticky header END
+
 // toggle menu
 function toggleMenu(){
   const sidemenu = document.querySelector(".sidemenu");
@@ -20,4 +27,4 @@ btnScrollTop.addEventListener("click", function(){
     behavior: "smooth"
   });
 });
-// scroll up button END 
+// scroll up button END
