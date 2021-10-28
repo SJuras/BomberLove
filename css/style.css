@@ -564,6 +564,10 @@ footer {
   width: 90%;
   margin: 0 auto;
 }
+
+.h-heart {
+  color: #d33132;
+}
 /* footer END */
 
 /* media queries */
@@ -612,6 +616,7 @@ footer {
     align-items: center;
     flex-direction: column;
   }
+
 }
 
 @media (max-width:768px) {
