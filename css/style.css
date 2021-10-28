@@ -433,6 +433,25 @@ section {
   padding: 24px;
 }
 
+.long-box ul li {
+  display: inline-block;
+  margin: 12px;
+  transition: 0.5s;
+}
+
+.long-box ul li a {
+  color: #f3f3f3;
+  font-size: 2em;
+  transition: 0.5s;
+}
+
+.long-box ul li:hover {
+  transform: translateY(-6px);
+}
+
+.long-box ul li:hover a {
+  color: #d33132;
+}
 
 .store-img {
   max-width: 400px;
@@ -465,6 +484,10 @@ section {
 
 .contact-form input[type='submit'] {
   cursor: pointer;
+}
+
+.mobile-only {
+  display: none;
 }
 /* pages END */
 
@@ -520,6 +543,10 @@ footer {
 
 @media(max-width:992px){
 
+  section {
+    padding: 30px 0px;
+  }
+
   .sidemenu {
     width: 100%;
   }
@@ -535,6 +562,10 @@ footer {
   .section-half {
     width: 100%;
     text-align: center;
+  }
+
+  .mobile-only {
+    display: block;
   }
 }
 
@@ -574,6 +605,13 @@ footer {
     max-width: 300px;
     height: auto;
   }
+
+  .long-box h2,
+  .long-box p {
+    text-align: center;
+  }
+
+
 }
 
 @media (max-width: 575.98px) {
